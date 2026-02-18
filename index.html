@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon IA Universelle</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #e5ddd5; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+        #chat-container { width: 100%; max-width: 500px; height: 80vh; background: white; display: flex; flex-direction: column; shadow: 0 10px 25px rgba(0,0,0,0.1); border-radius: 10px; overflow: hidden; }
+        #chat-box { flex: 1; padding: 20px; overflow-y: auto; display: flex; flex-direction: column; gap: 10px; }
+        .msg { padding: 10px 15px; border-radius: 15px; max-width: 80%; line-height: 1.4; }
+        .user { align-self: flex-end; background-color: #dcf8c6; color: #303030; }
+        .bot { align-self: flex-start; background-color: #f0f0f0; color: #303030; }
+        #input-area { display: flex; padding: 15px; background: #f0f0f0; }
+        input { flex: 1; padding: 10px; border: none; border-radius: 20px; outline: none; }
+        button { margin-left: 10px; background: #25d366; color: white; border: none; padding: 10px 20px; border-radius: 20px; cursor: pointer; font-weight: bold; }
+        button:hover { background: #128c7e; }
+    </style>
+</head>
+<body>
+
+<div id="chat-container">
+    <div id="chat-box">
+        <div class="msg bot">Bonjour ! Je suis ton assistant IA. Pose-moi n'importe quelle question ! 🚀</div>
+    </div>
+    <div id="input-area">
+        <input type="text" id="user-input" placeholder="Tapez votre question ici...">
+        <button id="send-btn">Envoyer</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
